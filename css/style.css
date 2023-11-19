@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    
+}
+
+.intro-image{
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, #ffffff5d, #000),url('../img/image1.jpg');
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(51% 0, 100% 0, 100% 43%, 100% 100%, 82% 97%, 0 100%, 0% 43%, 0 0);
+    margin: -1rem;
+    background-attachment: fixed;
+    
+
+
+}
+
+.intro-image__text{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+}
+
+
+.btn-container{
+    text-align: center;
+}
+
+.btn {
+    border-bottom: 0.2rem solid rgb(177, 152, 98);
+    color: rgb(240, 190, 82);
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+}
+
+.btn:hover {
+box-shadow: 0 1rem 2rem rgb(0, 0, 0.15);
+background-color: rgba(250, 235, 215, 0.253);
+transform: translateY(-5px);
+}
+
+.btn:active{
+
+box-shadow: 0 0.5rem 2rem rgb(0, 0, 0.15);
+transform: translateY(-5px);
+
+}
+.intro-text{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: rgb(228, 198, 158);
+    text-align: center;
+    height: 25vh;
+    padding-top: 3rem;
+    margin: -2.1rem;
+    
+    
+}
+
+.packaging-image{
+    height: 100vh;
+    background-image: url('../img/image2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.packaging-image__text{
+    
+    text-transform: uppercase;
+    text-align: center;
+    height: 25vh;
+    padding-bottom: 1rem;
+
+}
+
+.packaging_text__textbox {
+text-align: center;
+background-color: rgb(228, 198, 158);
+text-transform: uppercase;
+font-size: 1.2rem;
+text-decoration: none;
+padding: 1rem;
+
+
+}
+
+.tutorials-image{
+    height: 80vh;
+    background-image: url('../img/image3.jpg');
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(51% 0, 100% 0, 100% 43%, 100% 100%, 18% 95%, 0 100%, 0% 43%, 0 0);
+    background-attachment: fixed;
+}
+
+.tutorials-image__text{
+    text-align: center;
+    color: black;
+}
+
+.footer {
+    height: 200px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    background-color: antiquewhite;
+    margin: -2.4rem;
+    
+
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+
+}
+
+.footer ul li a {
+    color:rgb(94, 95, 97);
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: black;
+    transform: scale(1.2);
+}
